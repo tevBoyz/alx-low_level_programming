@@ -1,13 +1,14 @@
 #include <stdio.h>
 /**
  *main - entry point
- *Return  - always 0; success
- */
+ *
+ *Return: always 0 (success)
+*/
 int main(void)
 {
 int a;
 long int b;
-long int c;
+long long int c;
 char d;
 float f;
 
