@@ -18,7 +18,11 @@ nextTerm = t1 + t2;
 
 for (i = 1; i <= n; i++)
 {
+if (i == 50)
+printf("%ld", nextTerm);
+else
 printf("%ld, ", nextTerm);
+
 t1 = t2;
 t2 = nextTerm;
 nextTerm = t1 + t2;
