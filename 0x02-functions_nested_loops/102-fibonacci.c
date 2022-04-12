@@ -15,8 +15,6 @@ t2 = 1;
 
 nextTerm = t1 + t2;
 
-printf("%d, ", t2);
-
 for (i = 3; i <= n; i++)
 {
 printf("%d, ", nextTerm);
