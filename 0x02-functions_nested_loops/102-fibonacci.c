@@ -7,7 +7,8 @@
 
 int main(void)
 {
-int i, n, t1, t2, nextTerm;
+int i, n;
+unsigned long t1, t2, nextTerm;
 
 n = 50;
 t1 = 0;
