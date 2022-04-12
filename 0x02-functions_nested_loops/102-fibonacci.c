@@ -8,7 +8,6 @@
 int main(void)
 {
 int i, n;
-unsigned long t1, t2, nextTerm;
 
 n = 50;
 t1 = 0;
@@ -18,7 +17,7 @@ nextTerm = t1 + t2;
 
 for (i = 1; i <= n; i++)
 {
-printf("%d, ", nextTerm);
+printf("%ld, ", nextTerm);
 t1 = t2;
 t2 = nextTerm;
 nextTerm = t1 + t2;
