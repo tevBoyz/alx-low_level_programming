@@ -19,7 +19,7 @@ nextTerm = t1 + t2;
 for (i = 1; i <= n; i++)
 {
 if (i == 50)
-printf("%ld", nextTerm);
+printf("%ld\n", nextTerm);
 else
 printf("%ld, ", nextTerm);
 
