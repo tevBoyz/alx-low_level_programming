@@ -15,11 +15,11 @@ t2 = 1;
 
 nextTerm = t1 + t2;
 
-for (i = 3; i <= n; i++)
+for (i = 1; i <= n; i++)
 {
 printf("%d, ", nextTerm);
 t1 = t2;
-t2 = nextTerm;
+t2 = nexterm;
 nextTerm = t1 + t2;
 }
 return (0);
