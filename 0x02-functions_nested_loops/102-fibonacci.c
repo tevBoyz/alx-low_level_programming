@@ -8,6 +8,7 @@
 int main(void)
 {
 int i, n;
+unsigned long t1, t2, nextTerm;
 
 n = 50;
 t1 = 0;
@@ -16,7 +17,6 @@ t2 = 1;
 nextTerm = t1 + t2;
 
 for (i = 1; i <= n; i++)
-{
 printf("%ld, ", nextTerm);
 t1 = t2;
 t2 = nextTerm;
