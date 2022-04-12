@@ -19,7 +19,7 @@ for (i = 1; i <= n; i++)
 {
 printf("%d, ", nextTerm);
 t1 = t2;
-t2 = nexTerm;
+t2 = nextTerm;
 nextTerm = t1 + t2;
 }
 return (0);
