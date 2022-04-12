@@ -15,17 +15,13 @@ int i;
 if (n < 98)
 {
 for (i = n; i < 98; i++)
-{
 printf("%d ,", i);
 printf("%d\n", 98);
-}
 }
 else
 {
 for (i = n; i > 98; i--)
-{
 printf("%d ,", i);
 printf("%d\n", 98);
-}
 }
 }
