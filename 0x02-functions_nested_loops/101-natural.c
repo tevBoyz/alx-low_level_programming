@@ -16,4 +16,5 @@ res += i;
 printf("%d\n", res);
 return (0);
 }
+}
 
