@@ -18,7 +18,7 @@ while (*src != '\0')
 src++;
 dest++;
 }
-*(dest + 1) = '\0';
+*dest = '\0';
 
 return (start);
 }
