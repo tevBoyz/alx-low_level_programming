@@ -15,6 +15,8 @@ int i, x, mid1, mid2, length = 0;
 for (i = 0; s[i]; i++)
 length++;
 
+if(length >= 1)
+{
 if (length % 2 != 0)
 {
 mid1 = length / 2;
@@ -36,5 +38,6 @@ for (length = 0; length < mid1; length++)
 c = s[length];
 *(s + length) = *(s + (x - length - 1));
 *(s + (x - length - 1)) = c;
+}
 }
 }
