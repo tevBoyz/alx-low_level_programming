@@ -15,7 +15,7 @@ char *dest_start = dest;
 for(; *dest != '\0'; dest++)
 ;
 
-while (*src != '\0' && n--)
+while (n--)
 {
 *dest = *src;
 dest++;
