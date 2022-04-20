@@ -29,6 +29,8 @@ dest++;
 src++;
 }
 
+*dest = '\0';
+
 return (dest_start);
 }
 
