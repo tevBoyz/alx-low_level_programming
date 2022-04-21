@@ -10,33 +10,34 @@
 
 char *cap_string(char *str)
 {
-int i, j, trig;
+int x, y;
+int trigger;
+char nots[] = ",;.!?(){}\nt\" ";
 
-char sep[] = ",;.!?(){}\nt\" ";
-
-for (i = 0, trig = 0; str[i] != '\0'; i++)
+for (x = 0, trigger = 0; src[x] != '\0'; x++)
 {
-if (str[0] > 96 && str[0] < 123)
-trig = 1;
+if (src[0] > 96 && src[0] < 123)
+trigger = 1;
 
-for (j = 0; sep[j] != '\0'; j++)
+for (y = 0; nots[y] != '\0'; y++)
 {
-if (sep[j] == str[i])
-trig = 1;
+if (nots[y] == src[x])
+trigger = 1;
 }
 
-if (trig)
+if (trigger)
 {
-if (str[i] > 96 && str[i] < 123)
+if (src[x] > 96 && src[x] < 123)
 {
-str[i] -= 32;
-trig = 0;
+src[x] -= 32;
+trigger = 0;
 }
-else if (str[i] > 64 && str[i] < 91)
-trig = 0;
-else if (str[i] > 47 && str[i] < 58)
-trig = 0;
+else if (src[x] > 64 && src[x] < 91)
+trigger = 0;
+else if (src[x] > 47 && src[x] < 58)
+trigger = 0;
 }
 }
-return (str);
+return (src);
 }
+
