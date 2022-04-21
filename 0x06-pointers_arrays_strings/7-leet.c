@@ -9,19 +9,14 @@
 char *leet(char *str)
 {
 char *ptr = str;
+char *small = "aeotl", *cap = "AEOTL", *val = "43071";
+int i;
 
 while (*ptr != '\0')
 {
-if (*ptr == 'a' || *ptr == 'A')
-*ptr = '4';
-else if (*ptr == 'e' || *ptr == 'E')
-*ptr = '3';
-else if (*ptr == 'o' || *ptr == 'O')
-*ptr = '0';
-else if (*ptr == 't' || *ptr == 'T')
-*ptr = '7';
-else if (*ptr == 'l' || *ptr == 'L')
-*ptr = '1';
+for (i = 0; small[i] != '\0' || cap[i] != '\0'; i++)
+if (*ptr == small[i] || *ptr == cap[i])
+*ptr = val[i];
 
 ptr++;
 }
