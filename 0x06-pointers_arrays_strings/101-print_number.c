@@ -30,9 +30,9 @@ while (pow > 0)
 if (pow > 9)
 {
 if (!sign)
-_putchar((n / power % 10) + '0');
+_putchar((n / pow % 10) + '0');
 else
-_putchar((n / power % 10) * -1 + '0');
+_putchar((n / pow % 10) * -1 + '0');
 
 pow /= 10;
 }
