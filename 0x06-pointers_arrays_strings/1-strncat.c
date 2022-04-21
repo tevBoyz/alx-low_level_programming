@@ -4,6 +4,7 @@
  * _strncat - adds n chars to destination from source
  * @dest: destination string
  * @src: source string
+ * @n: number of bytes to be concated
  *
  * Return: destination string
  */
@@ -20,4 +21,3 @@ dest[srclen] = src[i];
 
 return (dest);
 }
-
