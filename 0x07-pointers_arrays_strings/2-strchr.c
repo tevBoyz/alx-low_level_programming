@@ -12,22 +12,16 @@
 
 char *_strchr(char *s, char c)
 {
-int found = 0;
+int i;
 
-while (*s != '\0')
+for (i = 0; *(s + i); i++)
 {
-if (*s == c)
-{
-found = 1;
-break;
+if (*(s + 1) == c)
+return (s + i);
 }
 
-s++;
-}
-
-
-if (found)
-return (s);
+if (*(s + 1) == c)
+return (s + 1);
 
 return (0);
 }
