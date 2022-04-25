@@ -29,7 +29,6 @@ s++;
 if (found)
 return (s);
 
-else
 return (0);
 }
 
