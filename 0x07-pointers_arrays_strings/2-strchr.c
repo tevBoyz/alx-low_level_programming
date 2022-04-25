@@ -20,6 +20,6 @@ s++;
 if (*s == c)
 return (s);
 else
-return (NULL);
+return (0);
 }
 
