@@ -18,6 +18,6 @@ for (i = 0; i < n; i++)
 *(s + 1) = b;
 }
 
-retrun (s);
+return (s);
 }
 
