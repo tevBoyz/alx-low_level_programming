@@ -17,7 +17,7 @@ if (argc > 1)
 for (i = 1; i < argc; i++)
 prod *= atoi(argv[i]);
 
-printf("%d\n", prod);
+printf("%i\n", prod);
 }
 else
 printf("Error\n");
