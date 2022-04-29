@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - main function
@@ -9,11 +8,10 @@
  * Return: exit status
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 (void)argc;
 printf("%s\n", argv[0]);
-
 
 return (0);
 }
