@@ -21,14 +21,14 @@ return (1);
 
 /**
  * main - main function
- * @argc - arg count
- * @argv - arg vector
- * Return - none
+ * @argc: - arg count
+ * @argv: - arg vector
+ * Return: none
  */
 
 int main(int argc, char *argv[])
 {
-int i = 0, coinUsed = 0; coin = 0;
+int i = 0, coinUsed = 0, coin = 0;
 int coins[] = {25, 10, 5, 2, 1};
 
 if (argc != 2)
