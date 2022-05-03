@@ -15,7 +15,7 @@ char *res;
 for (i = 0; str[i] != '\0'; i++)
 ;
 
-if (i == 0)
+if (str == NULL)
 return (NULL);
 
 res = (char *) malloc(sizeof(char) * i);
