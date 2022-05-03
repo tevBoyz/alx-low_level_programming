@@ -24,7 +24,7 @@ if (res == 0)
 return (NULL);
 else
 {
-while(i--)
+while (i--)
 {
 *(res + i) = *(str + i);
 }
