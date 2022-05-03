@@ -18,14 +18,14 @@ for (i = 0; str[i] != '\0'; i++)
 if (str == NULL)
 return (NULL);
 
-res = (char *) malloc(sizeof(char) * i);
+res = (char *) malloc(sizeof(char) * i + 1);
 
-if (res != NULL)
-{
+if (res == 0)
+return (NULL);
+
 while (i--)
 {
 *(res + i) = *(str + i);
-}
 }
 
 return (res);
