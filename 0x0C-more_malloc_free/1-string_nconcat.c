@@ -16,10 +16,10 @@ char *res;
 unsigned int i, reqmem, len1, len2;
 
 if (s1 == NULL)
-s1 = '\0';
+s1 = "";
 
 if (s2 == NULL)
-s2 = '\0';
+s2 = "";
 
 for (len1 = 0; s1[len1] != '\0'; len1++)
 ;
