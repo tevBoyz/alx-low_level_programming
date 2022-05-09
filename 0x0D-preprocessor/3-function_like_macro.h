@@ -2,7 +2,7 @@
 #define FUNCTION_LIKE_MACRO_H
 
 /**
- * File: 3-function_like_macro
+ * File: 3-function_like_macro.h
  * Desc: finds an absolute value of a number
  * @x: the number
  */
