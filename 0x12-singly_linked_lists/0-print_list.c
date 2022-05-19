@@ -14,7 +14,7 @@ size_t nodes = 0;
 const list_t *current = h;
 char *string;
 
-while(current != NULL)
+while (current != NULL)
 {
 if (current->str != NULL)
 string = current->str;
