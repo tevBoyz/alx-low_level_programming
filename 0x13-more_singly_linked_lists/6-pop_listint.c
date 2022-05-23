@@ -16,6 +16,10 @@ if (head == NULL)
 return (0);
 
 curr = *head;
+
+if (curr == NULL)
+return (0);
+
 x = curr->n;
 
 *head = curr->next;
