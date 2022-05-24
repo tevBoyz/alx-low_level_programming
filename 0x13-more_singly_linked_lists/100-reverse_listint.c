@@ -17,7 +17,7 @@ return (NULL);
 curr = *head;
 nxt = NULL;
 
-while (curr->next != NULL)
+while (curr && curr->next != NULL)
 {
 nxt = curr->next;
 curr->next = nxt->next;
