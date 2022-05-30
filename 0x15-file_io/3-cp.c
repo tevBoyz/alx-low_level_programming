@@ -26,7 +26,7 @@ while ((i = read(fd_read, buff, BUFSIZ)) > 0)
 {
 if (fd_write < 0 || write(fd_write, buff, i) != i)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to  %s\n", argv[2]);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(fd_read);
 exit(99);
 }
@@ -44,7 +44,7 @@ if (j < 0 || k < 0)
 if (j < 0)
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_read);
 if (k < 0)
-dprintf(STDERR_FILENO, "Erorr: Can't close fd %d\n", fd_write);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_write);
 exit(100);
 }
 return (0);
