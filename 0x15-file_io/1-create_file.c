@@ -26,10 +26,10 @@ for (; text_content[i]; i++)
 ;
 
 res = write(fd, text_content, i);
-}
 
 if (res != i)
 return (-1);
+}
 
 close(fd);
 return (1);
