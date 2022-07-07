@@ -32,4 +32,5 @@ newnode->prev = temp;
 temp->next = newnode;
 }
 return (newnode);
+free(newnode);
 }
