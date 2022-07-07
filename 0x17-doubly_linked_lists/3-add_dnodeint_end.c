@@ -19,18 +19,20 @@ return (NULL);
 newnode->n = n;
 newnode->prev = NULL;
 newnode->next = NULL;
-
-if (*head == NULL)
-*head = newnode;
-else
-{
 temp = *head;
+
+if (temp == NULL)
+{
+*head = newnode;
+return (newnode);
+}
+
 while (temp->next != NULL)
 temp = temp->next;
 
 newnode->prev = temp;
 temp->next = newnode;
-}
+
 return (newnode);
 free(newnode);
 }
